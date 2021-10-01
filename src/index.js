@@ -1,10 +1,18 @@
-import "./styles.css";
+const obj = {
+  person: {
+    name: "Luis",
+    age: 26
+  },
+  role: {
+    name: "programmer",
+    company: "AGAGT"
+  }
+};
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+console.log(obj);
+
+const change = "name";
+
+obj.person[change] = "Alves";
+
+console.log(obj.person.name);
